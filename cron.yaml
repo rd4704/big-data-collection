@@ -1,0 +1,6 @@
+cron:
+- description: backup data stream to GCS by dumping the string buffer into files
+  url: /backup
+  # schedule: every 1 hour at clock time
+  
+  schedule: every 60 minutes from 9:00 to 8:00

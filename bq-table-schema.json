@@ -1,0 +1,51 @@
+[
+    {
+        "name": "sessionId",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "visitorId",
+        "type": "STRING"
+    },
+    {
+        "name": "document",
+        "type": "RECORD",
+        "fields": [
+            {
+                "name": "title",
+                "type": "STRING"
+            },
+            {
+                "name": "url",
+                "type": "RECORD",
+                "fields": [
+                    {
+                        "name": "host",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "hostname",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "pathname",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "protocol",
+                        "type": "STRING"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "timestamp",
+        "type": "TIMESTAMP"
+    },
+    {
+        "name": "ip",
+        "type": "STRING"
+    }
+]
